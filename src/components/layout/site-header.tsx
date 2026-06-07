@@ -3,7 +3,7 @@
 import { useEffect, useId, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
-import { navigation } from "@/lib/data";
+import { contact, navigation } from "@/lib/data";
 import { scrollToAnchor } from "@/lib/lenis-instance";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
@@ -91,7 +91,7 @@ export function SiteHeader() {
             <span className="status-dot" aria-hidden="true" />
             Available for select work
           </span>
-          <a href="mailto:hello@georgeprovince.dev" className={buttonVariants({ size: "sm" })}>
+          <a href={`mailto:${contact.email}`} className={buttonVariants({ size: "sm" })}>
             Start a project
             <ArrowUpRight className="size-3" aria-hidden="true" />
           </a>

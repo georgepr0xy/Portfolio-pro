@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import { ArrowRight } from "lucide-react";
 
 import { SiteHeader } from "@/components/layout/site-header";
+import { contact } from "@/lib/data";
 import { ContactSection } from "@/components/portfolio/contact-section";
 import { SectionPlaceholder } from "@/components/portfolio/section-placeholder";
 import { StoryNode, StoryPipeline } from "@/components/portfolio/story-pipeline";
@@ -68,7 +69,7 @@ export default function Home() {
                   <ArrowRight className="size-3.5" aria-hidden="true" />
                 </a>
                 <a
-                  href="mailto:hello@georgeprovince.dev"
+                  href={`mailto:${contact.email}`}
                   className={buttonVariants({ variant: "outline", size: "lg" })}
                 >
                   Open a channel

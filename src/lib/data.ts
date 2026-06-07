@@ -1,7 +1,7 @@
 export const contact = {
-  email: "hello@georgeprovince.dev",
-  linkedin: "https://linkedin.com/in/georgeprovince",
-  github: "https://github.com/georgeprovince",
+  email: "provincegeorge412@gmail.com",
+  linkedin: "https://www.linkedin.com/in/george-province-7007b4238/",
+  github: "https://github.com/georgepr0xy",
 };
 
 export const navigation = [
